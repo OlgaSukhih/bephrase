@@ -1,0 +1,63 @@
+<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BE expressions · Homework</title><style>
+:root{--bg:#f5f6f3;--ink:#24312e;--muted:#65716d;--line:#dce2dd;--accent:#386c61;--light:#eaf2ed}*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Inter,Arial,sans-serif;color:var(--ink)}.shell{max-width:1050px;margin:auto;padding:20px 22px 90px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}.brand{font-size:13px;font-weight:750;letter-spacing:.12em;color:var(--accent)}.counter{color:var(--muted);font-size:14px}.progress{height:4px;background:#dce5df;border-radius:8px;margin-bottom:22px;overflow:hidden}.progress>div{height:100%;background:var(--accent);transition:width .2s}.slide{display:none;background:#fff;border:1px solid var(--line);border-radius:20px;padding:clamp(22px,4vw,46px);min-height:65vh;box-shadow:0 12px 45px #24312e0a}.slide.active{display:block}.eyebrow{font-size:13px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;color:var(--accent)}h1{font-family:Georgia,serif;font-size:clamp(32px,4.2vw,54px);font-weight:500;line-height:1.12;margin:12px 0 22px}h2{font-family:Georgia,serif;font-size:clamp(28px,3.6vw,43px);font-weight:500;margin:10px 0 20px}p,li{font-size:clamp(17px,2vw,21px);line-height:1.58}.intro{max-width:700px}.bank{display:grid;grid-template-columns:1fr 1fr;gap:12px}.term{border:1px solid var(--line);border-radius:12px;padding:15px 17px;background:#fbfcfa}.term strong{display:block;font-size:20px;color:#28594f;margin-bottom:5px}.term span{font-size:17px;line-height:1.5}.note{padding:17px 20px;background:var(--light);border-radius:12px;margin:18px 0;font-size:18px;line-height:1.55}.rules{display:grid;gap:13px}.rule{border-bottom:1px solid var(--line);padding-bottom:13px}.rule strong{font-size:20px}.rule p{margin:7px 0}.example{color:#346c5e}.task{padding:20px 0;border-bottom:1px solid var(--line)}.task:last-child{border-bottom:0}.num{font-size:13px;color:var(--accent);font-weight:800;letter-spacing:.1em}.ru{font-size:clamp(19px,2.4vw,25px);line-height:1.4;margin:8px 0 14px}textarea{display:block;width:100%;min-height:74px;resize:vertical;border:1.5px solid #cdd9d2;border-radius:11px;padding:15px;font:19px/1.4 inherit;color:var(--ink);background:#fbfcfa}textarea:focus{outline:2px solid #82b5a5;outline-offset:1px}.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px}.nav button,.download{font:700 16px inherit;border:1px solid var(--accent);border-radius:12px;padding:13px 22px;cursor:pointer}.prev{background:white;color:var(--accent)}.next,.download{background:var(--accent);color:white}.nav button:disabled{opacity:.3;cursor:default}.download{font-size:18px;margin-top:16px}.small{color:var(--muted);font-size:15px}.footer{font-size:13px;color:var(--muted);margin-top:14px}@media(max-width:650px){.shell{padding:12px 12px 80px}.slide{padding:22px 18px;min-height:67vh;border-radius:15px}.bank{grid-template-columns:1fr}.term strong{font-size:19px}.term span{font-size:16px}.nav button{padding:13px 17px}textarea{font-size:18px}.task{padding:17px 0}}
+</style></head><body><div class="shell"><div class="top"><div class="brand">ENGLISH · HOMEWORK</div><div class="counter" id="count"></div></div><div class="progress"><div id="bar"></div></div>
+<section class="slide active"><div class="eyebrow">Vocabulary reference</div><h1>Expressions with BE</h1><p class="intro">Изучите значения выражений. Обратите внимание на предлоги: они являются частью устойчивых сочетаний.</p><div class="bank">
+<div class="term"><strong>be afraid of</strong><span>бояться кого-либо или чего-либо<br><em>She's afraid of dogs.</em></span></div>
+<div class="term"><strong>be interested in</strong><span>интересоваться чем-либо<br><em>He's interested in architecture.</em></span></div>
+<div class="term"><strong>be late for</strong><span>опаздывать на что-либо<br><em>I'm late for my appointment.</em></span></div>
+<div class="term"><strong>be tired</strong><span>быть уставшим<br><em>We were tired after the trip.</em></span></div>
+<div class="term"><strong>be in a hurry</strong><span>торопиться, спешить<br><em>I'm in a hurry right now.</em></span></div>
+<div class="term"><strong>be in love with</strong><span>быть влюблённым в кого-либо<br><em>She's in love with him.</em></span></div>
+<div class="term"><strong>be fond of</strong><span>любить, питать симпатию к кому-либо или чему-либо<br><em>I'm fond of old films.</em></span></div>
+<div class="term"><strong>be jealous of</strong><span>завидовать кому-либо; ревновать<br><em>He's jealous of his brother's success.</em></span></div>
+<div class="term"><strong>be proud of</strong><span>гордиться кем-либо или чем-либо<br><em>We're proud of our team.</em></span></div>
+</div><div class="note">После <b>of / in / with</b> может стоять существительное, местоимение или глагол с <b>-ing</b>: <i>afraid of flying, interested in learning, fond of cooking</i>.</div></section>
+<section class="slide"><div class="eyebrow">Grammar reference</div><h2>Как меняется BE</h2><div class="rules">
+<div class="rule"><strong>Present Simple — am / is / are</strong><p>Состояние, чувство или ситуация сейчас либо вообще.</p><p class="example">I'm not afraid of flying.<br>Is she interested in art?<br>They aren't in a hurry.</p></div>
+<div class="rule"><strong>Past Simple — was / were</strong><p>Состояние или ситуация в определённый момент в прошлом.</p><p class="example">I was late for work yesterday.<br>We weren't tired after the concert.<br>Were you proud of your result?</p></div>
+<div class="rule"><strong>Present Perfect — have / has been</strong><p>Состояние началось в прошлом и продолжается сейчас либо относится к периоду до настоящего момента.</p><p class="example">I've been interested in astronomy since school.<br>She hasn't been late for work this month.<br>Have you ever been afraid of making a mistake?</p></div>
+</div><div class="note"><b>Важно:</b> в Present Perfect используйте <b>been</b>, а не <i>be</i>: <i>I've been tired all day.</i> С <i>for</i> указываем длительность (<i>for two years</i>), с <i>since</i> — начальный момент (<i>since 2022</i>). Не используйте Present Perfect с завершённым моментом времени <i>yesterday / last Friday</i>.</div><div class="note"><b>be tired ≠ be tired of</b>: <i>I'm tired</i> — я устал(а); <i>I'm tired of waiting</i> — мне надоело ждать.</div></section>
+<section class="slide" id="s3"><div class="eyebrow">Translation · Present Simple</div><h2>Translate into English</h2><p>Переведите предложения. Используйте выражения с <b>be</b>. Не забывайте отрицательные формы и предлоги.</p><div class="tasks" data-start="0" data-end="7"></div></section>
+<section class="slide"><div class="eyebrow">Translation · Past Simple</div><h2>Translate into English</h2><p>Обратите внимание на <b>was / were</b> и отрицания.</p><div class="tasks" data-start="7" data-end="14"></div></section>
+<section class="slide"><div class="eyebrow">Translation · Present Perfect</div><h2>Translate into English</h2><p>Используйте <b>have / has been</b> и подходящие указатели времени.</p><div class="tasks" data-start="14" data-end="21"></div></section>
+<section class="slide"><div class="eyebrow">Translation · Mixed tenses</div><h2>Choose the tense</h2><p>Определите время по смыслу и переведите предложения.</p><div class="tasks" data-start="21" data-end="30"></div></section>
+<section class="slide"><div class="eyebrow">Finish</div><h2>Your answers</h2><p>Скачайте файл со своими переводами и отправьте преподавателю. Ответы и ключи в домашнее задание не включены.</p><button class="download" id="download">Скачать мои ответы (.txt)</button><p class="small" id="filled"></p><p class="footer">Введённые ответы автоматически сохраняются в этом браузере.</p></section>
+<div class="nav"><button class="prev" id="prev">← Назад</button><button class="next" id="next">Далее →</button></div></div><script>
+const questions=[
+'Моя сестра интересуется психологией, но не любит читать научные статьи.',
+'Я не боюсь выступать перед небольшой аудиторией.',
+'Ты часто опаздываешь на встречи с друзьями?',
+'Он очень гордится своей младшей сестрой.',
+'Мы не торопимся: поезд отправляется только через час.',
+'Она любит проводить воскресные утра в маленьких кафе.',
+'Почему ты ревнуешь его к коллегам?',
+'Вчера мы не устали после долгой прогулки.',
+'В детстве я боялся больших собак.',
+'Она не опоздала на собеседование в понедельник.',
+'Вы торопились, когда я вам позвонил?',
+'Мои родители очень гордились мной после экзамена.',
+'Он не был влюблён в неё — они просто дружили.',
+'Ты интересовался историей, когда учился в школе?',
+'Я интересуюсь фотографией уже три года.',
+'Она ни разу не опоздала на занятия в этом семестре.',
+'Ты когда-нибудь боялся задавать вопрос на английском?',
+'Мы очень устали за последние несколько дней.',
+'Он с детства любит классическую музыку.',
+'Последнее время я совсем не тороплюсь по утрам.',
+'Ты когда-нибудь завидовал успехам близкого друга?',
+'Обычно она не торопится, когда собирается на работу.',
+'В прошлом году я не интересовался этой темой.',
+'Мы знакомы много лет, но я никогда не ревновала его к друзьям.',
+'Она очень гордилась своей командой после финального матча.',
+'Ты сейчас устал или просто не хочешь выходить?',
+'Я никогда не боялся путешествовать один.',
+'Вчера утром мы торопились, поэтому забыли зонтик.',
+'Они влюблены друг в друга с университета.',
+'Я не опаздывал на работу уже несколько месяцев.'
+];
+const key='be_expressions_hw_answers_v1';let saved={};try{saved=JSON.parse(localStorage.getItem(key)||'{}')}catch(e){};
+document.querySelectorAll('.tasks').forEach(root=>{const a=+root.dataset.start,b=+root.dataset.end;for(let j=a;j<b;j++){let wrap=document.createElement('div');wrap.className='task';let num=document.createElement('div');num.className='num';num.textContent='SENTENCE '+(j+1);let prompt=document.createElement('div');prompt.className='ru';prompt.textContent=questions[j];let input=document.createElement('textarea');input.setAttribute('aria-label','Перевод предложения '+(j+1));input.placeholder='Ваш перевод на английский…';input.value=saved[j]||'';input.addEventListener('input',()=>{saved[j]=input.value;try{localStorage.setItem(key,JSON.stringify(saved))}catch(e){}updateFilled()});wrap.append(num,prompt,input);root.append(wrap)}});
+const slides=[...document.querySelectorAll('.slide')];let idx=0;function render(){slides.forEach((s,j)=>s.classList.toggle('active',j===idx));document.getElementById('count').textContent=`${idx+1} / ${slides.length}`;document.getElementById('bar').style.width=((idx+1)/slides.length*100)+'%';document.getElementById('prev').disabled=idx===0;document.getElementById('next').disabled=idx===slides.length-1;window.scrollTo(0,0);updateFilled()}function updateFilled(){let count=questions.filter((_,j)=>(saved[j]||'').trim()).length;document.getElementById('filled').textContent=`Заполнено: ${count} из ${questions.length}`}
+document.getElementById('prev').onclick=()=>{if(idx>0){idx--;render()}};document.getElementById('next').onclick=()=>{if(idx<slides.length-1){idx++;render()}};
+document.getElementById('download').onclick=()=>{let lines=['BE EXPRESSIONS — HOMEWORK','Translation practice','',...questions.flatMap((q,j)=>[`${j+1}. ${q}`,`Answer: ${(saved[j]||'').trim()}`,''])];let blob=new Blob(['\ufeff'+lines.join('\r\n')],{type:'text/plain;charset=utf-8'});let url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='BE_expressions_my_answers.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)};render();
+</script></body></html>
